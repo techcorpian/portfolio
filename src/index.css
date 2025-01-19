@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.item {
+    width: 56%;
+    overflow: visible;
+    stroke: rgb(25, 25, 25);
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+
+.card-container {
+    perspective: 1000px; /* Enables 3D perspective */
+}
+
+.card-front,
+.card-back {
+    backface-visibility: hidden; /* Hides the back side when not facing the user */
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.card-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    /* background-color: #f3f3f3; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.card-container:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+
