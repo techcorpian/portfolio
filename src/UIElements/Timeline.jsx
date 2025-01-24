@@ -7,13 +7,13 @@ const ZigzagTimelineWithDots = () => {
       "company":"Upskilling Myself",
       "desc":`I enrolled in a comprehensive full-stack development course to deepen my technical expertise and broaden my skill set. Throughout the course, I focused intensively on mastering core web technologies like HTML, CSS, and JavaScript, which form the backbone of front-end development. 
 
-      I advanced my understanding by diving into ReactJS, learning its component-based architecture and state management to create dynamic, high-performance user interfaces. On the backend, I explored PHP, gaining proficiency in creating server-side logic and managing databases. This immersive learning experience allowed me to sharpen my skills across the full development stack and build a strong foundation for creating responsive, scalable web applications.`
+      I advanced my understanding by diving into ReactJS, learning its component-based architecture and state management to create dynamic, high-performance user interfaces.`
     },
     {
       "year":"Oct 2022 - Oct 2023",
       "company":"Yuzzworks, Chennai - Software Developer",
       "desc":`React & functional driven javascript expert in SPAs, UI Components, Mobile responsive web and Performance optimization.
-      The front-end use HTML 5, CSS 3, React JS, JQuery and Bootstrap or Tailwind to build a SPA that communicate with back-end via RESTful API.
+      The front-end use React JS, Bootstrap or Tailwind to build a SPA that communicate with back-end via RESTful API.
       Responsible for implementing UI mockups, integrating third party React libraries, and handling/creating Redux store data
       The backend use of Node JS, Express JS, MongoDB, Mongoose, MySQL, Postgre SQL, the complete MERN Stack & PERN Stack to provide RESTful APIs.
       Used Axios (React Library) to send HTTP Requests to the backend.
@@ -30,7 +30,7 @@ const ZigzagTimelineWithDots = () => {
       It also implements a High-level Authentication and Authorization process to ensure Secure User Interactions.
       In addition, I played a Pivotal Role in integrating the application with the Sales and Purchase systems by utilizing APIs.
       Collaborating within a team, I Addressed and Resolved Issues related to dev. and Successfully Debugged collective queries from end-users, enhancing the overall user experience.
-      To ensure continuous delivery, I also integrated a CI/CD pipeline, automating testing, deployment, and updates, enabling seamless releases and efficient handling of application changes while improving overall productivity and maintaining application quality.`
+      To ensure continuous delivery, I also integrated a CI/CD pipeline, automating testing using jest, deployment, and updates, enabling seamless releases and efficient handling of application changes while improving overall productivity and maintaining application quality.`
     },
 
   ]
@@ -38,7 +38,7 @@ const ZigzagTimelineWithDots = () => {
 
   useEffect(() => {
     const options = {
-      threshold: 0.6, // Trigger animation when 50% of the item is in view
+      threshold: 0.4, // Trigger animation when 50% of the item is in view
     };
 
     const observer = new IntersectionObserver((entries) => {

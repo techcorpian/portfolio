@@ -46,14 +46,14 @@ const ProjectCard = ({ children, addClass, bgColor, title, webLink, gitFrontendL
                         <Link to={webLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center border h-full border-neutral-500 text-neutral-500 p-2 px-4 cursor-pointer hover:bg-neutral-500 hover:text-white">
+                            className={`flex items-center border h-full border-neutral-500 text-neutral-500 p-2 px-4 cursor-pointer hover:bg-neutral-500 hover:text-white ${!webLink ? "hidden" : ""}`}>
                             App Link
                         </Link>
                         <Link
                             to={gitFrontendLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="border border-neutral-500 text-neutral-500 p-2 px-4 cursor-pointer hover:bg-neutral-500 hover:text-white w-[120px] text-center">
+                            className={`border border-neutral-500 text-neutral-500 p-2 px-4 cursor-pointer hover:bg-neutral-500 hover:text-white w-[120px] text-center ${!gitFrontendLink ? "hidden" : ""}`}>
                             Frontend Github
                         </Link>
                         <Link
@@ -106,6 +106,7 @@ const Projects = () => {
                         bgColor="bg-neutral-100 shadow-xl border"
                         title="Real Estate Website"
                         stacks={realEstate}
+                        webLink="https://royals28.in/"
                         backContent={<div className='flex flex-col gap-2 text-md text-gray-400'>
                             <li>
                                 Optimising the performance of the website for the faster scroll.
@@ -118,7 +119,7 @@ const Projects = () => {
                     </ProjectCard>
                 </div>
                 <div className='flex flex-col gap-6 w-full'>
-                    <ProjectCard
+                    {/* <ProjectCard
                         addClass="h-[400px] md:h-1/2"
                         bgColor="bg-neutral-100 shadow-xl border"
                         title="Gmail Clone"
@@ -132,13 +133,16 @@ const Projects = () => {
                             </li>
                         </div>}>
                         Gmail Clone with all features available such as composing and sending emails. Also includes inbox, CRUD operations for email management, spams, sent mails, searching mails and much more.
-                    </ProjectCard>
+                    </ProjectCard> */}
 
                     <ProjectCard
-                        addClass="h-[400px] md:h-1/2 text-white"
-                        bgColor="bg-neutral-800 shadow-xl border"
+                        addClass="h-[400px] md:h-1/2 text-neutral-800"
+                        bgColor="bg-neutral-100 shadow-xl border"
                         title="Storage System App"
                         stacks={posStacks}
+                        webLink="https://storexx.netlify.app/"
+                        gitFrontendLink="https://github.com/techcorpian/storexFrontend"
+                        gitBackendLink="https://github.com/techcorpian/storexBackend"
                         backContent={<div className='flex flex-col gap-2 text-md text-gray-400'>
                             <li>
                                 Bulk delete feature for the deletion of folders and files in a single click.
@@ -158,6 +162,8 @@ const Projects = () => {
                         addClass="h-[400px] text-white"
                         bgColor="bg-neutral-800 shadow-xl"
                         title="School Management System"
+                        gitFrontendLink="https://github.com/techcorpian/crescent-frontend"
+                        gitBackendLink="https://github.com/techcorpian/crescent-backend"
                         stacks={school}
                         backContent={<div className='flex flex-col gap-2 text-md text-gray-400'>
                             <li>
@@ -171,6 +177,7 @@ const Projects = () => {
                         addClass="h-[400px]"
                         bgColor="bg-neutral-100 shadow-xl border"
                         title="Ethereum Staking App"
+                        webLink="https://goldsand.fi/"
                         stacks={ethStacks}
                         backContent={<div className='flex flex-col gap-2 text-md text-gray-400'>
                             <li>

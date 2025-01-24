@@ -7,7 +7,7 @@ const LandingSummary = ({addClass, whiteText, sumWidth}) => {
         <div className={`animate-slide-in-left opacity-0 transform translate-x-10 ${addClass}`}>
             <div className={`text-xl ${whiteText}`}>Hello, I'm</div>
             <div className={`md:text-6xl text-5xl font-extrabold ${whiteText}`}>MUSHTHAQ AMEEN.</div>
-            <div className={`mt-5 ${sumWidth} break-words text-gray-500 px-6 md:px-0 ${whiteText}`}>
+            <div className={`mt-5 ${sumWidth} break-words text-gray-500 px-6 md:px-0 ${whiteText} md:block hidden`}>
                 {summary}
             </div>
         </div>

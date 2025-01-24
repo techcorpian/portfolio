@@ -170,7 +170,7 @@ const Skills = () => {
                         <div className='grid md:grid-cols-4 grid-cols-3 gap-2'>
                             {
                                 backendSkills.map((data) => (
-                                    <div className='py-2 px-4 border shadow-md text-black/80 text-center rounded-full text-sm'>{data}</div>
+                                    <div className='py-2 px-4 hover:bg-neutral-800 hover:text-white hover:border-white hover:shadow-none transition-all duration-300 ease-in-out cursor-pointer border shadow-md text-black/80 text-center rounded-full text-sm'>{data}</div>
                                 ))
                             }
                         </div>
@@ -181,7 +181,7 @@ const Skills = () => {
                         <div className='grid md:grid-cols-4 grid-cols-3 gap-2'>
                             {
                                 databases.map((data) => (
-                                    <div className='py-2 px-4 border shadow-md text-black/80 text-center rounded-full text-sm'>{data}</div>
+                                    <div className='py-2 px-4 hover:bg-neutral-800 hover:text-white hover:border-white hover:shadow-none transition-all duration-300 ease-in-out cursor-pointer border shadow-md text-black/80 text-center rounded-full text-sm'>{data}</div>
                                 ))
                             }
                         </div>
@@ -192,7 +192,7 @@ const Skills = () => {
                         <div className='grid md:grid-cols-4 grid-cols-3 gap-2'>
                             {
                                 deployment.map((data) => (
-                                    <div className='py-2 px-4 border shadow-md text-black/80 text-center rounded-full text-sm'>{data}</div>
+                                    <div className='py-2 px-4 hover:bg-neutral-800 hover:text-white hover:border-white hover:shadow-none transition-all duration-300 ease-in-out cursor-pointer border shadow-md text-black/80 text-center rounded-full text-sm'>{data}</div>
                                 ))
                             }
                         </div>

@@ -21,7 +21,7 @@ const Contacts = () => {
       title: "mobile"
     },
     {
-      contentTitle: "mushthaq.na@gmail.com",
+      contentTitle: "mushthaq.n.dev@gmail.com",
       logo: <IoIosMail />,
       title: "email"
     },

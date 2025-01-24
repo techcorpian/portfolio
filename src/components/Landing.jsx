@@ -4,6 +4,7 @@ import { FaLinkedinIn, FaInstagram, FaGithub, FaReact, FaNodeJs, FaArrowRightArr
 import { SiRedux, SiMongodb } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { BiLogoTypescript } from "react-icons/bi";
+import { Link } from 'react-router-dom'
 
 
 import { CiMobile3 } from "react-icons/ci";
@@ -21,13 +22,16 @@ const Card = ({ addClass, children }) => {
 const Landing = () => {
     const links = [
         {
-            logo: <FaLinkedinIn />
+            logo: <FaLinkedinIn />,
+            link: 'www.linkedin.com/in/mushthaq-n-a0b16127b'
         },
         {
-            logo: <FaInstagram />
+            logo: <FaInstagram />,
+            link: 'https://www.instagram.com/mushthaq_dev/'
         },
         {
-            logo: <FaGithub />
+            logo: <FaGithub />,
+            link: 'https://github.com/techcorpian/'
         },
     ]
     return (
@@ -78,7 +82,10 @@ const Landing = () => {
             <div className='flex absolute bottom-10 md:left-15 md:justify-start justify-center w-full text-3xl gap-4'>
                 {
                     links.map((link) => (
-                        <div className='bg-white border rounded-full p-3 shadow-lg'>{link.logo}</div>
+                        <Link
+                        target="_blank"
+                        rel="noopener noreferrer" 
+                        to={link.link} className='bg-white border rounded-full p-3 shadow-lg'>{link.logo}</Link>
                     ))
                 }
             </div>
