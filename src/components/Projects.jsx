@@ -159,7 +159,7 @@ const Projects = () => {
                 </div>
                 <div className='flex flex-col gap-6 w-full'>
                     <ProjectCard
-                        addClass="h-[400px] text-white"
+                        addClass="h-[450px] text-white"
                         bgColor="bg-neutral-800 shadow-xl"
                         title="School Management System"
                         gitFrontendLink="https://github.com/techcorpian/crescent-frontend"
@@ -174,7 +174,7 @@ const Projects = () => {
                     </ProjectCard>
 
                     <ProjectCard
-                        addClass="h-[400px]"
+                        addClass="h-[450px]"
                         bgColor="bg-neutral-100 shadow-xl border"
                         title="Ethereum Staking App"
                         webLink="https://goldsand.fi/"

@@ -37,7 +37,7 @@ const Landing = () => {
     return (
         <div className="fixed flex lg:flex-row flex-col justify-between lg:text-left text-center lg:items-center h-screen md:px-12 py-20 gap-9">
             <LandingSummary whiteText='lg:text-white' sumWidth="lg:w-2/3" />
-            <div className="flex flex-col justify-center items-center gap-9">
+            <div className="flex flex-col justify-center items-center gap-9 md:block hidden">
                 <div className="lg:relative lg:right-60">
                     <Card addClass="bg-gray-100 hover:shadow-xl transition-all duration-300 ease-in-out">
                         Frontend

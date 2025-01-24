@@ -73,7 +73,7 @@ const Menu = () => {
 
             {/* Mobile dropdown menu */}
             <ul
-                className={`absolute flex flex-col px-2 py-2 pt-16 z-30 w-full bg-white ${
+                className={`fixed absolute flex flex-col px-2 py-2 pt-16 z-30 w-full bg-white ${
                     !dropdown ? "hidden" : ""
                 }`}
             >
