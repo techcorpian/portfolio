@@ -36,7 +36,7 @@ const ProjectCard = ({ children, addClass, bgColor, title, webLink, gitFrontendL
             </div>
 
             {/* Back Side */}
-            <div className={`absolute card-back rounded-xl h-full ${bgColor}`}>
+            <div className={`absolute card-back rounded-xl h-full ${bgColor} ${isFlipped ? 'flipped' : ''}`}>
                 <div className="flex flex-col justify-between items-start h-full p-4">
                     <h3 className="text-lg font-bold">Challenges Faced In This Project</h3>
                     <p className="">
@@ -87,7 +87,7 @@ const Projects = () => {
                         bgColor="bg-neutral-800 shadow-xl"
                         title="Restaurant POS System"
                         stacks={posStacks}
-                        webLink="https://gmail-clone-ma.netlify.app/"
+                        webLink="https://dinepos.netlify.app/"
                         gitFrontendLink="https://github.com/techcorpian/dineposFrontend"
                         gitBackendLink="https://github.com/techcorpian/dineposBackend"
                         backContent={<div className='flex flex-col gap-2 text-md text-gray-400'>

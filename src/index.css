@@ -36,6 +36,14 @@
     z-index: 1;
 }
 
+.card-container.flipped .card-front {
+    transform: rotateY(-180deg);
+  }
+  
+  .card-container.flipped .card-back {
+    transform: rotateY(0deg);
+  }
+
 .card-container:hover .card-front {
     transform: rotateY(-180deg);
 }
