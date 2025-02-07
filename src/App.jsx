@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Menu from './shared/Menu';
 import Home from './components/Home';
+import SplashCursor from './UIElements/SplashCursor';
 import './App.css'
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
       >
       <div className='h-screen'>
         <Menu />
+        <SplashCursor/>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
