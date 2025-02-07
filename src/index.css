@@ -36,13 +36,13 @@
     z-index: 1;
 }
 
-.card-container.flipped .card-front {
+/* .card-container .card-back {
     transform: rotateY(-180deg);
   }
   
-  .card-container.flipped .card-back {
+  .card-container .card-front {
     transform: rotateY(0deg);
-  }
+  } */
 
 .card-container:hover .card-front {
     transform: rotateY(-180deg);
