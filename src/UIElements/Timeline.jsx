@@ -24,14 +24,19 @@ const ZigzagTimelineWithDots = () => {
       Code version control using Git and Github.`
     },
     {
-      "year":"Oct 2023 - Present",
+      "year":"Oct 2023 - April 2025",
       "company":"ALL-POS Technologies, Chennai - Software Developer",
-      "desc":`Independently developed an Application named Gift Card With React JS as frontend and Node JS as backend, which encompasses the Creation and Redemption of Cards. The application incorporates various Features, Functionalities, and Validations.
+      "desc":`Independently developed an Loyalty program application With React JS as frontend and Springboot as backend, which encompasses the creation and redemption of Loyalty Cards. The application incorporates various Features, Functionalities, and Validations.
       It also implements a High-level Authentication and Authorization process to ensure Secure User Interactions.
       In addition, I played a Pivotal Role in integrating the application with the Sales and Purchase systems by utilizing APIs.
       Collaborating within a team, I Addressed and Resolved Issues related to dev. and Successfully Debugged collective queries from end-users, enhancing the overall user experience.
       To ensure continuous delivery, I also integrated a CI/CD pipeline, automating testing using jest, deployment, and updates, enabling seamless releases and efficient handling of application changes while improving overall productivity and maintaining application quality.`
     },
+    {
+      "year":"April 2025 - Present",
+      "company":"Neurealm, Chennai - Frontend Developer (Frontier Airlines)",
+      "desc":`Modernised the UI of a large-scale airline booking platform by migrating to a modern tech stack including Next.js, React.js, and Material UI, improving page load speed by 25% while enhancing accessibility and user journey flow. Implemented centralized state management using Apollo Cache and integrated GraphQL APIs with Apollo Client for efficient data handling. Built reusable components and custom hooks, reducing code redundancy by 25%. Actively managed Agile workflows via Azure DevOps, handling user stories, sprint planning, and tracking. Improved application stability through comprehensive unit and integration testing with Jest. Proposed GraphQL optimizations using selective data fetching and caching. Earned client recognition for ownership, initiative, and professional delivery.`
+    }
 
   ]
   const timelineItemsRef = useRef([]);

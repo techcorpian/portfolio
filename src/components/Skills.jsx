@@ -131,9 +131,9 @@ const Skills = () => {
         },
     ]
 
-    const frontendSkills = ['ReactJS', 'Redux', 'JavaScript', 'TypeScript', 'TailwindCSS', 'Bootstrap', 'jQuery', 'AJAX', 'HTML', 'CSS'];
+    const frontendSkills = ['ReactJS', 'NextJS', 'Redux','Apollo cache', 'JavaScript', 'TypeScript', 'TailwindCSS', 'Bootstrap', 'jQuery', 'AJAX', 'HTML', 'CSS'];
 
-    const backendSkills = ['NodeJS', 'ExpressJS', 'JavaScript', 'TypeScript', 'PHP', 'Laravel'];
+    const backendSkills = ['NodeJS', 'ExpressJS', 'Springboot', 'TypeScript', 'PHP Laravel', 'Redis', 'Kafka'];
 
     const databases = ['MySQL', 'MongoDB', 'PostgreSQL'];
 
